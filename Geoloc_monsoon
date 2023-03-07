@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name=ECOSTRESS_Geoloc
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=10000
+#SBATCH --time=90:00:00
+#SBATCH --chdir=/scratch/jld664/Research/ECOSTRESS_PNW
+#SBATCH --output=/scratch/jld664/%x_%A.out
+
+
+srun ECOSTRESS_Geolocatio.sh
